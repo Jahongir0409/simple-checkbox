@@ -1,0 +1,148 @@
+
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+  -webkit-box-sizing:inherit;
+          box-sizing:inherit;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #52D1C4, #B0D1D1);
+  
+}
+.container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.list {
+  margin: 0;
+  padding: 0;
+}
+.item {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: #D13D42;
+  text-shadow: 1px 0 5px grey;
+  font-weight: bold;
+} 
+.link:hover {
+  opacity: .5;}
+/**********************************/
+.box-wrapper {
+   width: 40vw;
+   margin: 50px auto;
+   background-color: white;
+   min-height: 400px;
+   padding: 20px 30px;
+   border-radius: 8px;
+   box-shadow: 1px 1px 5px black;
+}
+.heading-primary {
+  text-align: center;
+  color: #D1293A;
+  border-bottom: 1px solid #D1D0CD;
+  padding-bottom: 10px;
+}
+.activity-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px; 25px;
+  margin-bottom: 15px;
+}
+.input-controller {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+label {
+  display: flex;
+  align-items: center;
+}
+label:hover {
+  opacity: .5;
+}
+.input-text {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.input-football:checked:disabled + .football {
+  opacity: .7;
+  background-image: url(../img/football.png);
+}
+
+/*.input-ufc:checked + .ufc {
+  background-image: url(../img/ufc.png);
+} */
+.input-ufc:disabled + .ufc {
+  opacity: .1;
+  background-image: url(../img/ufc.png);
+}
+/*.input-ufc:disabled:disabled + .input-controller {
+  opacity: .7;
+  background-image: url(../img/ufc.png);
+}*/
+.input-basketball:checked + .basketball {
+  opacity: 1;
+  background-image: url(../img/basketball.png);
+
+}
+.input-tennis:checked + .tennis {
+  opacity: 1;
+  background-image: url(../img/tennis.png);
+}
+.input-swimming:checked + .swimming {
+  opacity: 1;
+  background-image: url(../img/swimming.png);
+
+}
+.about-sport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.about-sport img {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.about-sport ::before{
+  content: '';
+  display: inline-block;
+/*  width: 15px
+  height:15px;*/
+  background-image: url(../img/icon.png);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+}
